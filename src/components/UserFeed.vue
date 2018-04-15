@@ -2,7 +2,10 @@
   <div class="feed">
     <div>
       <form v-on:submit.prevent="tweet" class="tweetForm">
-	<textarea v-model="text" placeholder=""/><br/>
+	<textarea v-model="text" placeholder="Product"/><br/>
+  <textarea v-model="text2" placeholder="Description"/><br/>
+  <textarea v-model="text3" placeholder="Quantity"/><br/>
+  <textarea v-model="text4" placeholder="msrp"/><br/>
 	<div class="buttonWrap">
 	  <button class="primary" type="submit">Tweet</button>
 	</div>
@@ -18,7 +21,10 @@
    name: 'UserFeed',
    data () {
      return {
-       text: '',
+        text: '',
+        text2: '',
+        text3: '',
+        text4: '',
      }
    },
    components: { FeedList },
@@ -33,9 +39,12 @@
    methods: {
      tweet: function() {
        this.$store.dispatch('addTweet',{
-         tweet: this.text,
+         tweet: "Product: \n" + this.text + "\n\nDescription:\n" + this.text2 + "\n\nQuantity:\n" + this.text3 + "\n\nMSRP:\n" + this.text4,
        }).then(tweet => {
-	 this.text = "";
+      	 this.text = "";
+         this.text2 = "";
+         this.text3 = "";
+         this.text4 = "";
        });
      },
    }

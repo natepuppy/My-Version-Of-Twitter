@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul id="menu">
-      <li><img src="/static/images/red-bird.png"/></li>
+     <!-- <li><img src="/static/images/red-bird.png"/></li>-->
       <li><router-link to="/">Home</router-link></li>
       <li><form v-on:submit.prevent="search">
 	<input v-model="keywords" placeholder="Search">
