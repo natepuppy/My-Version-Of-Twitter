@@ -27,7 +27,6 @@
      min-width: 100px;
      line-height: 1em;
      border: none;
-     border-radius: 5px;
      color: white;
      padding: 5px;
      text-align: center;
@@ -37,10 +36,10 @@
      margin: 4px 2px;
  }
  button.primary {
-     background-color: #F35537;
+     background-color: red;
  }
  button.alternate {
-     background-color: #77C4D3;
+     background-color: red;
  }
  button:focus {
      outline: none;

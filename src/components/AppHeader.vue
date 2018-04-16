@@ -2,7 +2,7 @@
   <nav>
     <ul id="menu">
      <!-- <li><img src="/static/images/red-bird.png"/></li>-->
-      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/"><img src="/static/images/kmart.png"/></router-link></li>
       <li><form v-on:submit.prevent="search">
 	<input v-model="keywords" placeholder="Search">
 	<a href="#" v-on:click="search" class="search"><i class="fas fa-search"></i></a>
