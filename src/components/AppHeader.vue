@@ -2,13 +2,13 @@
   <nav>
     <ul id="menu">
      <!-- <li><img src="/static/images/red-bird.png"/></li>-->
-      <li><router-link to="/"><img src="/static/images/kmart.png"/></router-link></li>
+      <li><router-link to="/"><img src="/static/images/walmart.jpg"/></router-link></li>
       <li><form v-on:submit.prevent="search">
 	<input v-model="keywords" placeholder="Search">
 	<a href="#" v-on:click="search" class="search"><i class="fas fa-search"></i></a>
       </form></li>
       <li class="right" v-if="loggedIn">
-	<router-link :to="{ name: 'UserPage', params: {userID: user.id}}">{{user.username}}</router-link> <a @click="logout" href="#">Logout</a></p>
+	<router-link :to="{ name: 'UserPage', params: {userID: user.id}}"></router-link> <a @click="logout" class="logout" href="#">Leave Inventory Logging</a></p>
       </li>
       <li class="right" v-else>
 	<form v-on:submit.prevent="login">
@@ -91,7 +91,7 @@
      height: 50px;
      text-align: center;
      line-height: 50px;
-     color: #666;
+     color: #007dc6;
  }
  /*Active color*/
  li a.active {
@@ -113,5 +113,19 @@
  }
  img {
      width: 50px;
+ }
+ .logout {
+    color: blue;
+    min-width: 100px;
+    line-height: 1em;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    background-color: #007dc6;
  }
 </style>

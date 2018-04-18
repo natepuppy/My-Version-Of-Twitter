@@ -1,11 +1,11 @@
 <template>
   <center><div class="column">
-    <h1>K-Mart factory inventory</h1>
-    <h2>Right here. Right now.</h2>
+    <h1>Walmart factory inventory</h1>
+    <h2>Save money. Live better. Walmart</h2>
     <img src="/static/images/customer.jpg"/>
     <form v-on:submit.prevent="register">
-      <p>Enter your current employee position.</p>
-      <input class="narrow" v-model="username" placeholder="Position (i.e. manager, clerk etc.)">
+      <p>Enter your current employee ID.</p>
+      <input class="narrow" v-model="username" placeholder="Eployee ID">
       <p>Department and login information</p>
       <input class="wide" v-model="name" placeholder="Department"><br/>
       <input class="narrow" v-model="email" placeholder="Email Address">
@@ -18,7 +18,7 @@
   <p>Lifestyle</p>
   <img class="front" src="/static/images/lifestyle.jpeg"/>
   <p>Electronics</p>
-  <img class="front" src="/static/images/electronics.jpg"/>
+  <img class="front" src="/static/images/electronics.jpg"/><br><br>
   </div>
   </center>
 
@@ -67,11 +67,11 @@
     width: 30%;
 }
 p {
-  color: red;
+  color: #007dc6;
 }
  h1 {
      margin-bottom: 0px;
-     color: red;
+     color: #007dc6;
  }
  h2 {
      margin-top: 0px;
@@ -79,7 +79,7 @@ p {
      font-weight: normal;
      margin-bottom: 50px;
      text-align: center;
-     color: red;
+     color: #007dc6;
  }
  .narrow {
      width: 170px;

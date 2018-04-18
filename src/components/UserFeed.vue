@@ -1,15 +1,19 @@
 <template>
   <div class="feed">
-    <div>
+    <div class="myfee">
+    <h1>Inventory Logging</h1>
+    <img src="/static/images/stock.jpg"/>
+          <br><br><br>
       <form v-on:submit.prevent="tweet" class="tweetForm">
 	<textarea v-model="text" placeholder="Product"/><br/>
   <textarea v-model="text2" placeholder="Description"/><br/>
   <textarea v-model="text3" placeholder="Quantity"/><br/>
   <textarea v-model="text4" placeholder="msrp"/><br/>
 	<div class="buttonWrap">
-	  <button class="primary" type="submit">Tweet</button>
+	  <button class="primary" type="submit">Submit</button>
 	</div>
       </form>
+
     </div>
     <feed-list v-bind:feed="feed" />
   </div>
@@ -53,12 +57,15 @@
 
 <style scoped>
  .feed {
-     width: 600px;
+     width: 100%;
  }
  .tweetForm {
-     background: #eee;
+     background: #007dc6;
      padding: 10px;
      margin-bottom: 10px;
+     margin-left: 25%;
+     margin-right: 25%;
+     margin-bottom: 5%;
  }
  .buttonWrap {
      width: 100%;
@@ -76,5 +83,15 @@
      margin-bottom: 5px;
      resize: none;
      box-sizing: border-box;
+ }
+ .myfee {
+  text-align: center;
+ }
+ img {
+ width: 70%;
+ }
+  h1 {
+     margin-bottom: 0px;
+     color: #007dc6;
  }
 </style>

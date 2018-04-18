@@ -36,10 +36,10 @@
      margin: 4px 2px;
  }
  button.primary {
-     background-color: red;
+     background-color: #007dc6;
  }
  button.alternate {
-     background-color: red;
+     background-color: #007dc6;
  }
  button:focus {
      outline: none;

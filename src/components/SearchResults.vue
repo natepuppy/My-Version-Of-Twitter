@@ -1,6 +1,7 @@
 <template>
   <div class="feed">
     <h1>Search Results</h1>
+    
     <p>Searched for {{keywords}}</p>
     <feed-list v-bind:feed="feed" />
   </div>
