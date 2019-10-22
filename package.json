@@ -15,7 +15,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
-    "knex": "^0.14.6",
+    "knex": "^0.19.5",
     "mariasql": "^0.2.6",
     "moment": "^2.22.0",
     "mysql": "^2.15.0",
