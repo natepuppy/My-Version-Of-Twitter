@@ -17,7 +17,7 @@
     "jsonwebtoken": "^8.2.1",
     "knex": "^0.14.6",
     "mariasql": "^0.2.6",
-    "moment": "^2.22.0",
+    "moment": "^2.29.4",
     "mysql": "^2.15.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
